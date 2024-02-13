@@ -1,5 +1,6 @@
 // Write your code here
 import './index.css'
+import {formatDistanceToNow} from 'date-fns'
 
 const CommentItem = props => {
   const {
@@ -10,6 +11,7 @@ const CommentItem = props => {
   } = props
   const {id, name, comment, isLike, date} = listEl
   const initial = name[0]
+  const commentDate = formatDistanceToNow(date)
   const count = Math.ceil(
     Math.random() * initialContainerBackgroundClassNames.length,
   )
@@ -29,7 +31,7 @@ const CommentItem = props => {
           <h1 className="name">{name.toUpperCase()}</h1>
           <p className="comments">{comment}</p>
         </div>
-        <p></p>
+        <p className="dateEl">{commentDate}</p>
       </div>
       <div className="imageConatiner">
         <div className="buttonElement">
