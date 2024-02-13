@@ -1,0 +1,76 @@
+/* Write your CSS here */
+.bg_container {
+  min-height: 100vh;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 37px;
+  font-family: 'Roboto';
+  background-color: #ffffff;
+}
+.heading-comment {
+  color: #1e293b;
+  font-size: 55px;
+}
+.headContainer {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 424px;
+  padding-bottom: 20px;
+}
+.para_tech {
+  color: #475569;
+  font-size: 22px;
+  font-weight: 600;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.nameText {
+  width: 464px;
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 21px;
+  border-style: solid;
+  border-color: #dee0e3;
+  border-radius: 8px;
+}
+.commentText {
+  width: 464px;
+  height: 200px;
+  margin-bottom: 15px;
+  font-size: 21px;
+  border-style: solid;
+  border-color: #dee0e3;
+  border-radius: 8px;
+}
+.btnEl {
+  width: 134px;
+  height: 47px;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.listContainer {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.span1 {
+  background-color: #0284c7;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+}
+.comments_para {
+  font-size: 25px;
+}
