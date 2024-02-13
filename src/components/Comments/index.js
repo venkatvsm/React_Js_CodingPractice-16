@@ -35,12 +35,12 @@ class Comments extends Component {
       name,
       comment,
       isLike: false,
-      
+      date: new Date(),
     }
     this.setState(prevState => ({
       initialListEl: [...prevState.initialListEl, newComment],
-      name:'',
-      comment:'',
+      name: '',
+      comment: '',
     }))
   }
 
@@ -64,7 +64,7 @@ class Comments extends Component {
   }
 
   render() {
-    const {initialListEl} = this.state
+    const {initialListEl, name, comment} = this.state
     console.log(initialListEl)
     return (
       <div className="bg_container">
@@ -81,12 +81,14 @@ class Comments extends Component {
               type="text"
               className="nameText"
               placeholder="Your Name"
+              value={name}
               onChange={this.nameInputTriggered}
             />
             <textarea
               type="text"
               className="commentText"
               placeholder="Your Comment"
+              value={comment}
               onChange={this.commentInputTriggered}
             ></textarea>
             <button type="submit" className="btnEl" onClick={this.submitForm}>
