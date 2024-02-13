@@ -90,3 +90,8 @@
 .deleteimage {
   width: 38px;
 }
+.dateEl {
+  padding-top: 15px;
+  color: #7e858e;
+  font-size: 21px;
+}
