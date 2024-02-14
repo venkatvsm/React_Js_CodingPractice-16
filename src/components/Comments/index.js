@@ -12,7 +12,6 @@ const initialContainerBackgroundClassNames = [
   'red',
   'light-blue',
 ]
-
 const initialList = []
 
 // Write your code here
