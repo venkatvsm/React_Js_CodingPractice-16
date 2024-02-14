@@ -90,7 +90,7 @@ class Comments extends Component {
               placeholder="Your Comment"
               value={comment}
               onChange={this.commentInputTriggered}
-            ></textarea>
+            />
             <button type="submit" className="btnEl" onClick={this.submitForm}>
               Add Comment
             </button>
